@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes Especializados</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header id="encabezado-principal">
+        <nav class="navbar">
+            <div class="logo"><img src="imagenes/logo.png" alt=""></div>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="menu-icono">
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#quienes-somos">Quienes somos</a></li>
+                <li><a href="#cotizacion">Cotización</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-central">
+        
+        <!-- HERO SECTION (100vh) -->
+        <section id="hero" class="hero-section">
+            <div class="contenedor-texto">
+                <h1 class="texto-hero">
+                    <span id="maquina"></span>
+                </h1>
+                <br>
+                <br>
+                <p class="palabra-hero"><span id="maquina2"></span></p>
+                <br>
+                <br>
+                <br>
+                <div class="cotizacion-boton">
+                    <a href="https://wa.me/525512345678?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización." target="_blank" class="btn-hola" style="text-decoration: none; display: inline-block;">
+                        Contactar ahora
+                    </a>                
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccion-quienes-somos" id="quienes-somos">
+            <br>
+            
+            <h1>¿Quiénes somos?</h1>
+    
+    <!-- Aquí puedes pegar la Opción 1 o la Opción 2 -->
+    <p class="texto-normal">
+        Somos una empresa con la visión de consolidarnos como la primera opción para el traslado especializado de materiales. Trabajamos con los más altos estándares de calidad, respaldados por un equipo humano profundamente comprometido con el servicio. Nuestra misión es liderar el sector, permitiendo que la excelencia de nuestro trabajo hable por nosotros.
+    </p>
+
+    <!-- La frase final destacada -->
+    <p class="frase-destacada">
+        "Porque con nosotros, tu tranquilidad es nuestra meta y tu proyecto se vuelve nuestro compromiso."
+    </p>
+</section>
+
+        <!-- SECCIÓN DE CARDS (Materiales) -->
+        <section id="materiales" class="seccion-cards" style="text-align: center;">
+            
+            <h1>¿Qué llevamos?</h1>
+            <br>
+            <br>
+            <div class="contenedor-grid">
+                <!-- Card 1 -->
+                <div class="card-material">
+                    <img src="imagenes/material1.png" alt="Material 1" class="img-cuadrada">
+                    <div class="card-texto">
+                        <h3>Cristal templado</h3>
+                        <p>La evolución de la resistencia. Es un cristal sometido a un tratamiento térmico que multiplica su fuerza estructural, diseñado para soportar impactos y garantizar seguridad absoluta al fragmentarse sin bordes cortantes.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card-material">
+                    <img src="imagenes/material2.png" alt="Material 2" class="img-cuadrada">
+                    <div class="card-texto">
+                        <h3>Cristal plano</h3>
+                        <p>La base de la transparencia. Es el vidrio en su forma original y más pura, liso y versátil, ideal para espacios donde la claridad óptica y la estética son los únicos protagonistas.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card-material">
+                    <img src="imagenes/material3.png" alt="Material 3" class="img-cuadrada">
+                    <div class="card-texto">
+                        <h3>Canceleria de Aluminio</h3>
+                        <p>El esqueleto del diseño moderno. Son las estructuras que combinan ligereza con una durabilidad excepcional, enmarcando el cristal con precisión geométrica para crear acabados arquitectónicos funcionales y sofisticados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DEL SLIDER -->
+        <section id="trabajo" class="seccion-slider">
+            <h1 class="titulo-seccion">Nuestro trabajo</h1>
+            <div class="slider-contenedor">
+                <div class="slider-track" id="slider-track">
+                    <img src="imagenes/imagen1.jpg" alt="Trabajo 1" class="slide">
+                    <img src="imagenes/imagen2.jpg" alt="Trabajo 2" class="slide">
+                    <img src="imagenes/imagen3.jpg" alt="Trabajo 3" class="slide">
+                    <img src="imagenes/imagen4.jpg" alt="Trabajo 4" class="slide">
+                    <img src="imagenes/imagen5.jpg" alt="Trabajo 5" class="slide">
+                </div>
+                
+                <!-- Botones del slider -->
+                <button class="btn-slider prev" onclick="moverSlider(-1)">&#10094;</button>
+                <button class="btn-slider next" onclick="moverSlider(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE COTIZACIÓN -->
+        <section id="cotizacion" class="seccion-cotizacion">
+            <div class="card-cotizacion">
+                <h2>Realiza tu cotización con nosotros</h2>
+                <p>Mandanos un mensaje haciendo clic en el botón de abajo.</p>
+                 <a href="https://wa.me/525512345678?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización." target="_blank" class="btn-contacto" style="text-decoration: none; display: inline-block;">
+                        Contactar ahora
+                    </a>  
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="pie-de-pagina" class="footer-oscuro">
+        <div class="about-us">
+            <h3>Acerca de nosotros</h3>
+            <p>Somos expertos en soluciones de logística y transportes especializados. Cuidamos tu carga con la máxima seguridad y eficiencia.</p>
+        </div>
+
+        <!-- NUEVA SECCIÓN: Redes Sociales -->
+        <div class="redes-sociales">
+            <h4>Síguenos en nuestras redes:</h4>
+            <div class="iconos-redes">
+                
+                <!-- Icono de Facebook (SVG) -->
+                <a href="https://www.facebook.com/share/14XgNvEVcmu/" target="_blank" class="icono" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+
+                <!-- Icono de Instagram (SVG) -->
+                <a href="https://www.instagram.com/transp_especializados/" target="_blank" class="icono" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
